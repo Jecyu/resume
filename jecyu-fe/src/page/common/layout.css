@@ -2,9 +2,21 @@
  * @Author: Jecyu
  * @Date: 2017-10-23 6:21:36 pm 
  * @Modified By: JeCyu 
- * @Last Modified time: 2017-10-23 11:04:37 pm 
+ * @Last Modified time: 2017-10-25 1:13:51 pm 
  */
- body {
-    background: rgb(136, 136, 136);
-    /* background: url(../../image/me.jpg); */
+ 
+body {  
+    background: #888;
+    /* background: url(../../image/me.jpg) no-repeat; */
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    border: none;
 }

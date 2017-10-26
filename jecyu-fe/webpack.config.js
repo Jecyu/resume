@@ -2,11 +2,11 @@
  * @Author: Jecyu
  * @Date: 2017-10-23 10:58:40 am 
  * @Modified By: JeCyu 
- * @Last Modified time: 2017-10-23 10:50:11 pm 
+ * @Last Modified time: 2017-10-26 5:25:31 pm 
  */
-var webpack           = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack           = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // 环境变量配置,dev / online
 var WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
@@ -18,6 +18,7 @@ var getHtmlConfig     = function(name, title) {
         template: './src/view/' + name + '.html',
         filename: 'view/' + name +'.html',        
         title   : title,
+        favicon : './favicon.ico',
         inject  : true,
         hash    : true,
         chunks  : ['common', name]  
@@ -26,12 +27,13 @@ var getHtmlConfig     = function(name, title) {
 
 var config = {
     entry :  {  //入口文件
-        'common': [__dirname + '/src/page/common/index.js'],
-        'index' : [__dirname + '/src/page/index/index.js']
+        'common'    : [__dirname + '/src/page/common/index.js'],
+        'index'     : [__dirname + '/src/page/index/index.js'],
+        'bootstrap' : 'bootstrap-loader'
     },
     output: {
         path      : __dirname + '/dist',  // 输出文件放置的地方
-        publicPath: '/dist/',                      // 打包后的文件访问依赖包的路径
+        publicPath: 'dev' === WEBPACK_ENV ? '/dist/' : '//s.linjiyu.com/jecyu-fe/dist/',                      // 打包后的文件访问依赖包的路径
         filename  : 'js/[name].js'        // 文件名
     },
     externals: {
@@ -51,13 +53,13 @@ var config = {
                 test: /\.css$/, 
                 use : ExtractTextPlugin.extract({
                         fallback: 'style-loader', 
-                        use: 'css-loader'
+                        use: 'css-loader', 
                 }) 
             },
             {
                 test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, 
                 use: 'url-loader?limit=100&name=resource/[name].[ext]'                 
-            }        
+            }
         ]
     },
     plugins: [
