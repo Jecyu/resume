@@ -2,7 +2,7 @@
  * @Author: Jecyu
  * @Date: 2017-10-23 10:58:40 am 
  * @Modified By: JeCyu 
- * @Last Modified time: 2017-10-26 5:25:31 pm 
+ * @Last Modified time: 2017-10-27 12:03:25 pm 
  */
 const webpack           = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -29,6 +29,7 @@ var config = {
     entry :  {  //入口文件
         'common'    : [__dirname + '/src/page/common/index.js'],
         'index'     : [__dirname + '/src/page/index/index.js'],
+        'detail'     : [__dirname + '/src/page/detail/index.js'],
         'bootstrap' : 'bootstrap-loader'
     },
     output: {
@@ -70,7 +71,8 @@ var config = {
         }),
         // 把css单独打包到文件里
         new ExtractTextPlugin('css/[name].css'),
-        new HtmlWebpackPlugin(getHtmlConfig('index', '首页'))
+        new HtmlWebpackPlugin(getHtmlConfig('index', '首页')),
+        new HtmlWebpackPlugin(getHtmlConfig('detail', '详情页'))
     ]
     
 };

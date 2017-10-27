@@ -2,17 +2,19 @@
  * @Author: Jecyu
  * @Date: 2017-10-26 8:30:39 am 
  * @Modified By: JeCyu 
- * @Last Modified time: 2017-10-26 8:30:53 am 
+ * @Last Modified time: 2017-10-27 5:13:54 pm 
  */
  
 /* footer */
 .footer {
     font-size: 18px;
+    text-align: center;
     color: #fff;
     background: #722872;    
 }
 
 .footer .footer-below {
-    height: 100px;    
-    padding-top: 50px;
+    height: 100px;  
+    line-height: 100px;  
 }
+

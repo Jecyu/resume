@@ -2,7 +2,7 @@
  * @Author: Jecyu
  * @Date: 2017-10-23 6:21:36 pm 
  * @Modified By: JeCyu 
- * @Last Modified time: 2017-10-25 1:13:51 pm 
+ * @Last Modified time: 2017-10-27 5:18:46 pm 
  */
  
 body {  
@@ -19,4 +19,9 @@ li {
 img {
     display: block;
     border: none;
+}
+
+p, iframe {
+    margin: 0;
+    padding: 0;
 }
