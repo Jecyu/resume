@@ -1,0 +1,54 @@
+<!-- 第一部分：头部导航（逻辑：可以隐藏、显示以此显示嵌入页的全屏）
+嵌入部分：
+第二部分：标题说明、切换按钮组
+第三部分：作品展示效果页 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>详情页</title>
+<link rel="shortcut icon" href="/dist/favicon.ico"><link href="/dist/css/common.css?f9e3c2357f855ee2b112" rel="stylesheet"><link href="/dist/css/detail.css?f9e3c2357f855ee2b112" rel="stylesheet"></head>
+
+<body>   
+    <nav class="navbar navbar-default">
+    <div class="container">
+        <!-- for mobile display -->
+        <div class="navbar-header">           
+            <a class="nav-brand">
+                <img src="/dist/resource/logo.png" alt="website logo">
+            </a>
+        </div>
+        <a href="./index.html" class="btn btn-default navbar-btn navbar-right">Home</a>
+    </div>
+</nav>
+    <main>
+        <div class="page-wrap">
+            <iframe class="iframe" id="work-frame" name="iFrame" frameborder="0"
+             src="./index.html" onload="resizeIframe(this)" ></iframe>      
+        </div>
+    </main>
+    <footer class="container-fluid footer">
+    <!-- <div class="footer-above text-center">
+        <h2>Where to find me?</h2>
+    </div> -->
+    <div class="footer-below">
+        <p>
+            Jecyu Lin© 2017. All Rights Reversed                        
+        </p>
+    </div>
+</footer>   
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- <script src="https://cdn.bootcss.com/iframe-resizer/3.5.14/iframeResizer.min.js"></script> -->
+<script>
+    function resizeIframe(obj) {
+        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+    }
+</script>
+<script type="text/javascript" src="/dist/js/base.js?f9e3c2357f855ee2b112"></script><script type="text/javascript" src="/dist/js/detail.js?f9e3c2357f855ee2b112"></script></body>
+
+</html>
