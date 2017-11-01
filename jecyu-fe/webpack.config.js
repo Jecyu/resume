@@ -2,7 +2,7 @@
  * @Author: Jecyu
  * @Date: 2017-10-23 10:58:40 am 
  * @Modified By: JeCyu 
- * @Last Modified time: 2017-11-01 6:10:58 pm 
+ * @Last Modified time: 2017-11-01 10:12:39 pm 
  */
 const webpack           = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -34,7 +34,7 @@ var config = {
     },
     output: {
         path      : __dirname + '/dist',  // 输出文件放置的地方
-        publicPath: 'dev' === WEBPACK_ENV ? '/dist/' : '//s.linjiyu.com/jecyu-fe/dist/',                      // 打包后的文件访问依赖包的路径
+        publicPath: 'dev' === WEBPACK_ENV ? '/dist/' : '../',                      // 打包后的文件访问依赖包的路径
         filename  : 'js/[name].js'        // 文件名
     },
     externals: {
