@@ -2,7 +2,7 @@
  * @Author: Jecyu
  * @Date: 2017-10-23 10:58:40 am 
  * @Modified By: JeCyu 
- * @Last Modified time: 2017-11-01 10:12:39 pm 
+ * @Last Modified time: 2017-11-09 12:21:06 pm 
  */
 const webpack           = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -30,7 +30,6 @@ var config = {
         'common'    : [__dirname + '/src/page/common/index.js'],
         'index'     : [__dirname + '/src/page/index/index.js'],
         'detail'     : [__dirname + '/src/page/detail/index.js'],
-        'bootstrap' : 'bootstrap-loader'
     },
     output: {
         path      : __dirname + '/dist',  // 输出文件放置的地方
