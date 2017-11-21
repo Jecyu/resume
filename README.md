@@ -26,10 +26,7 @@ Web 前端工程师
 常见布局。熟悉CSS3，熟悉盒模型、浮动、定位、BFC等概念。了解响应式
 和 flex 布局。
 
-点击查看： 
-[css常见布局](http://www.linjiyu.me/front-end-development-exercise-book/css-layout/shengbei/index.html) 
-[css3常见效果](http://www.linjiyu.me/front-end-development-exercise-book/css3-effects/loading/index.html) 
-[技术产品官网](http://www.linjiyu.me/ife-baidu-2017/xiaowei-college/task-07/index.html)
+点击查看： [css常见布局](http://www.linjiyu.me/front-end-development-exercise-book/css-layout/shengbei/index.html) [css3常见效果](http://www.linjiyu.me/front-end-development-exercise-book/css3-effects/loading/index.html) [技术产品官网](http://www.linjiyu.me/ife-baidu-2017/xiaowei-college/task-07/index.html) [移动web页面](http://www.linjiyu.me/ife-baidu-2017/xiaowei-college/task-11/index.html)
 
 ### JavaScript&jQuery
 
@@ -37,18 +34,15 @@ Web 前端工程师
 tab 切换、轮播、瀑布流布局、懒加载，stickUp 等效果。掌握事件模型、
 DOM 操作、ajax、jsonp、闭包、原型链、面向对象、封装等知识
 
-点击查看： 
-[jQuery常见效果](http://www.linjiyu.me/front-end-development-exercise-book/jQuery-effects/dist/view/index.html) 
-[各种轮播](http://www.linjiyu.me/front-end-development-exercise-book/jQuery-banners/dist/view/index.html) [设计站](http://www.linjiyu.me/front-end-development-exercise-book/jQuery-effects/dist/view/masonry-layout.html)
-[前端util库]()
+点击查看： [jQuery常见效果](http://www.linjiyu.me/front-end-development-exercise-book/jQuery-effects/dist/view/index.html) [各种轮播](http://www.linjiyu.me/front-end-development-exercise-book/jQuery-banners/dist/view/index.html) [设计站](http://www.linjiyu.me/front-end-development-exercise-book/jQuery-effects/dist/view/masonry-layout.html) [前端util库](https://github.com/Jecyu/front-end-components/blob/master/libs/util/index.js)
 
 ### 框架&工具
 
-熟练使用 sublime、vscode、Git、Node.js、Linux 命令行等开发工具熟悉gulp、webpack等前端构建工具，打包代码和实现代码的模块化。了解 vue.js 和
+熟练使用 sublime、vscode、sass、Git、Node.js、Linux 命令行等开发工具熟悉gulp、webpack等前端构建工具，打包代码和实现代码的模块化。了解 vue.js 和
 bootStrap 的基本用法，对 vue 和 bootStrap 有一定的使用经验，能够用
 bootstap 搭建网站。
 
-[单页面应用](http://www.linjiyu.me/resume/jecyu-fe/dist/view/index.html) 
+[单页面应用](http://www.linjiyu.me/resume/jecyu-fe/dist/view/index.html) [基于vue.js实现的联系人信息](http://www.linjiyu.me/front-end-development-exercise-book/i-today/dist/)
 
 ## 项目经验
 
